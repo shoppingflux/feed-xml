@@ -17,7 +17,7 @@
                 <link><![CDATA[http://ps-dev.shopping-feed.com]]></link>
             </category>
             <discounts>
-                <discount type="percentage" start="2017-03-03" end="2017-04-03" sale="1">10</discount>
+                <discount>10</discount>
             </discounts>
             <description>
                 <full><![CDATA[ &lt;p&gt;very good mug&lt;/p&gt; ]]></full>
@@ -28,9 +28,9 @@
                 <delay>2</delay>
             </shipping>
             <images>
-                <image><![CDATA[http://ps-dev.shopping-feed.com/img/p/2/6/26-large_default.jpg]]></image>
-                <image><![CDATA[http://ps-dev.shopping-feed.com/img/p/2/6/26-large_default.jpg]]></image>
-                <image><![CDATA[http://ps-dev.shopping-feed.com/img/p/2/6/26-large_default.jpg]]></image>
+                <image type="main"><![CDATA[http://ps-dev.shopping-feed.com/img/p/2/6/26-large_default.jpg]]></image>
+                <image type="additional"><![CDATA[http://ps-dev.shopping-feed.com/img/p/2/6/26-large_default.jpg]]></image>
+                <image type="additional"><![CDATA[http://ps-dev.shopping-feed.com/img/p/2/6/26-large_default.jpg]]></image>
             </images>
             <attributes>
                 <attribute name="color"><![CDATA[ sample value ]]></attribute>
@@ -44,7 +44,7 @@
                     <quantity>1</quantity>
                     <price>10</price>
                     <discounts>
-                        <discount type="percentage" start="2017-03-03" end="2017-04-03" sale="1">10</discount>
+                        <discount type="price" start="2017-03-03" end="2017-04-03" sale="1">10</discount>
                     </discounts>
                     <shipping>
                         <cost>5.90</cost>
