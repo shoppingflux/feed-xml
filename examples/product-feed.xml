@@ -6,8 +6,8 @@
             <gtin>123456789></gtin>
             <name><![CDATA[ My best product ]]></name>
             <link><![CDATA[http://ps-dev.shopping-feed.com/index.php?id_product=8&amp;controller=product]]></link>
-            <quantity>1</quantity>
             <price>10</price>
+            <quantity>1</quantity>
             <brand>
                 <name><![CDATA[ Fashion Manufacturer ]]></name>
                 <link><![CDATA[http://ps-dev.shopping-feed.com]]></link>
