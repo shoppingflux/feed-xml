@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog version="1.0">
+    <feed>
+        <product>
+            <reference>AB123</reference>
+            <gtin>123456789></gtin>
+            <name><![CDATA[ My best product ]]></name>
+            <link><![CDATA[http://ps-dev.shopping-feed.com/index.php?id_product=8&amp;controller=product]]></link>
+            <weight>1.20</weight>
+            <quantity>1</quantity>
+            <price>10</price>
+            <brand>
+                <name><![CDATA[ Fashion Manufacturer ]]></name>
+                <link><![CDATA[http://ps-dev.shopping-feed.com]]></link>
+            </brand>
+            <category>
+                <name><![CDATA[ Root > Home > Mugs ]]></name>
+                <link><![CDATA[http://ps-dev.shopping-feed.com]]></link>
+            </category>
+            <discounts>
+                <discount type="percentage" start="" end="" sale="">10</discount>
+            </discounts>
+            <description>
+                <full><![CDATA[ &lt;p&gt;very good mug&lt;/p&gt; ]]></full>
+                <short><![CDATA[ &lt;p&gt;a mug&lt;/p&gt; ]]></short>
+            </description>
+            <shipping>
+                <cost>5.90</cost>
+                <delay>2</delay>
+            </shipping>
+            <images>
+                <image><![CDATA[http://ps-dev.shopping-feed.com/img/p/2/6/26-large_default.jpg]]></image>
+                <image><![CDATA[http://ps-dev.shopping-feed.com/img/p/2/6/26-large_default.jpg]]></image>
+                <image><![CDATA[http://ps-dev.shopping-feed.com/img/p/2/6/26-large_default.jpg]]></image>
+            </images>
+            <attributes>
+                <attribute name="color"><![CDATA[ sample value ]]></attribute>
+                <attribute name="size"><![CDATA[ sample value ]]></attribute>
+            </attributes>
+            <variations>
+                <variation>
+                    <reference>AB123</reference>
+                    <gtin>123456789></gtin>
+                    <quantity>1</quantity>
+                    <price>10</price>
+                    <discounts>
+                        <discount type="percentage" start="" end="" sale="">10</discount>
+                    </discounts>
+                    <shipping>
+                        <cost>5.90</cost>
+                        <delay>2</delay>
+                    </shipping>
+                    <images>
+                        <image><![CDATA[http://ps-dev.shopping-feed.com/img/p/2/6/26-large_default.jpg]]></image>
+                        <image><![CDATA[http://ps-dev.shopping-feed.com/img/p/2/6/26-large_default.jpg]]></image>
+                        <image><![CDATA[http://ps-dev.shopping-feed.com/img/p/2/6/26-large_default.jpg]]></image>
+                    </images>
+                    <attributes>
+                        <attribute name="color"><![CDATA[ sample value ]]></attribute>
+                        <attribute name="size"><![CDATA[ sample value ]]></attribute>
+                        <attribute name="weight"><![CDATA[ sample value ]]></attribute>
+                    </attributes>
+                </variation>
+            </variations>
+        </product>
+    </feed>
+</catalog>
