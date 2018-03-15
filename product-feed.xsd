@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="catalog" type="catalogType"/>
+  <xs:complexType name="catalogType">
+    <xs:sequence>
+      <xs:element type="feedType" name="feed"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="version"/>
+  </xs:complexType>
+  <xs:complexType name="shippingType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="cost"/>
+      <xs:element type="xs:string" name="delay"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="discountsType">
+    <xs:sequence>
+      <xs:element type="discountType" name="discount"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="categoryType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="name"/>
+      <xs:element type="xs:string" name="link"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="brandType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="name"/>
+      <xs:element type="xs:string" name="link"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="attributesType">
+    <xs:sequence>
+      <xs:element type="attributeType" name="attribute" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="descriptionType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="full"/>
+      <xs:element type="xs:string" name="short"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="attributeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="name" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="feedType">
+    <xs:sequence>
+      <xs:element type="productType" name="product"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="discountType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="type" use="optional"/>
+        <xs:attribute type="xs:string" name="start" use="optional"/>
+        <xs:attribute type="xs:string" name="end" use="optional"/>
+        <xs:attribute type="xs:string" name="sale" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="variationsType">
+    <xs:sequence>
+      <xs:element type="variationType" name="variation"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="variationType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="reference"/>
+      <xs:element type="xs:string" name="gtin"/>
+      <xs:element type="xs:string" name="quantity"/>
+      <xs:element type="xs:string" name="price"/>
+      <xs:element type="discountsType" name="discounts"/>
+      <xs:element type="shippingType" name="shipping"/>
+      <xs:element type="imagesType" name="images"/>
+      <xs:element type="attributesType" name="attributes"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="imagesType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="image" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="productType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="reference"/>
+      <xs:element type="xs:string" name="gtin"/>
+      <xs:element type="xs:string" name="name"/>
+      <xs:element type="xs:string" name="link"/>
+      <xs:element type="xs:string" name="weight"/>
+      <xs:element type="xs:string" name="quantity"/>
+      <xs:element type="xs:string" name="price"/>
+      <xs:element type="brandType" name="brand"/>
+      <xs:element type="categoryType" name="category"/>
+      <xs:element type="discountsType" name="discounts"/>
+      <xs:element type="descriptionType" name="description"/>
+      <xs:element type="shippingType" name="shipping"/>
+      <xs:element type="imagesType" name="images"/>
+      <xs:element type="attributesType" name="attributes"/>
+      <xs:element type="variationsType" name="variations"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
