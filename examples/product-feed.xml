@@ -35,6 +35,7 @@
             <attributes>
                 <attribute name="color"><![CDATA[ sample value ]]></attribute>
                 <attribute name="size"><![CDATA[ sample value ]]></attribute>
+                <attribute name="weight"><![CDATA[ sample value ]]></attribute>
             </attributes>
             <variations>
                 <variation>
