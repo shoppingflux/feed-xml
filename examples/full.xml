@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<catalog version="1.0">
-    <feed>
+<catalog>
+    <feed version="1.0.0">
         <product>
             <reference>AB123</reference>
             <gtin>123456789></gtin>
@@ -23,19 +23,35 @@
                 <full><![CDATA[ &lt;p&gt;very good mug&lt;/p&gt; ]]></full>
                 <short><![CDATA[ &lt;p&gt;a mug&lt;/p&gt; ]]></short>
             </description>
-            <shipping>
-                <cost>5.90</cost>
-                <delay>2</delay>
-            </shipping>
+            <shippings>
+                <shipping>
+                    <amount>5.90</amount>
+                    <label><![CDATA[ Retrait magasin]]></label>
+                    <delay unit="day" opening="true">2</delay>
+                </shipping>
+            </shippings>
             <images>
                 <image type="main"><![CDATA[http://ps-dev.shopping-feed.com/img/p/2/6/26-large_default.jpg]]></image>
                 <image type="additional"><![CDATA[http://ps-dev.shopping-feed.com/img/p/2/6/26-large_default.jpg]]></image>
                 <image type="additional"><![CDATA[http://ps-dev.shopping-feed.com/img/p/2/6/26-large_default.jpg]]></image>
             </images>
             <attributes>
-                <attribute name="color"><![CDATA[ sample value ]]></attribute>
-                <attribute name="size"><![CDATA[ sample value ]]></attribute>
-                <attribute name="weight"><![CDATA[ sample value ]]></attribute>
+                <attribute type="variation">
+                    <name>Color</name>
+                    <value>Red</value>
+                </attribute>
+                <attribute type="variation">
+                    <name>Size</name>
+                    <value>XML</value>
+                </attribute>
+                <attribute type="attribute">
+                    <name>Capacity</name>
+                    <value>10</value>
+                </attribute>
+                <attribute>
+                    <name>Material</name>
+                    <value>Iron</value>
+                </attribute>
             </attributes>
             <variations>
                 <variation>
@@ -44,24 +60,38 @@
                     <quantity>1</quantity>
                     <price>10</price>
                     <discounts>
-                        <discount type="price" start="2017-03-03" end="2017-04-03" sale="1">10</discount>
+                        <discount type="price" start="2018-05-30T09:00:00" end="2018-05-30T09:00:00" sale="1">10</discount>
                     </discounts>
-                    <shipping>
-                        <cost>5.90</cost>
-                        <delay>2</delay>
-                    </shipping>
+                    <shippings>
+                        <shipping>
+                            <amount>5.90</amount>
+                            <label><![CDATA[ Retrait magasin ]]></label>
+                            <delay unit="day" opening="true">2</delay>
+                        </shipping>
+                    </shippings>
                     <images>
                         <image><![CDATA[http://ps-dev.shopping-feed.com/img/p/2/6/26-large_default.jpg]]></image>
                         <image><![CDATA[http://ps-dev.shopping-feed.com/img/p/2/6/26-large_default.jpg]]></image>
                         <image><![CDATA[http://ps-dev.shopping-feed.com/img/p/2/6/26-large_default.jpg]]></image>
                     </images>
                     <attributes>
-                        <attribute name="color"><![CDATA[ sample value ]]></attribute>
-                        <attribute name="size"><![CDATA[ sample value ]]></attribute>
-                        <attribute name="weight"><![CDATA[ sample value ]]></attribute>
+                        <attribute type="variation">
+                            <name>Color</name>
+                            <value>Red</value>
+                        </attribute>
+                        <attribute type="attribute">
+                            <name>Capacity</name>
+                            <value>10</value>
+                        </attribute>
                     </attributes>
                 </variation>
             </variations>
         </product>
     </feed>
+    <metadata>
+        <agent>shopping-feed-php-sdk:1.0.0</agent>
+        <platform>Magento:2.0.1</platform>
+        <startedAt>2018-05-30T09:00:00</startedAt>
+        <finishedAt>2018-05-30T09:20:00</finishedAt>
+    </metadata>
 </catalog>

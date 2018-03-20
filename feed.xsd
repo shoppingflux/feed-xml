@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="catalog" type="catalogType"/>
+    <xs:complexType name="catalogType">
+        <xs:sequence>
+            <xs:element type="feedType" name="feed"/>
+            <xs:element type="metadataType" name="metadata" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="shippingType">
+        <xs:all>
+            <xs:element type="xs:decimal" name="amount"/>
+            <xs:element type="xs:normalizedString" name="label"/>
+            <xs:element type="delayType" name="delay"/>
+        </xs:all>
+    </xs:complexType>
+    <xs:complexType name="discountsType">
+        <xs:sequence>
+            <xs:element type="discountType" name="discount" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="categoryType">
+        <xs:all>
+            <xs:element type="xs:token" name="name"/>
+            <xs:element type="xs:token" name="link" minOccurs="0"/>
+        </xs:all>
+    </xs:complexType>
+    <xs:complexType name="shippingsType">
+        <xs:sequence>
+            <xs:element type="shippingType" name="shipping"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="brandType">
+        <xs:all>
+            <xs:element type="xs:token" name="name"/>
+            <xs:element type="xs:token" name="link" minOccurs="0"/>
+        </xs:all>
+    </xs:complexType>
+    <xs:complexType name="attributesType">
+        <xs:sequence>
+            <xs:element type="attributeType" name="attribute" maxOccurs="unbounded" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="delayType">
+        <xs:simpleContent>
+            <xs:extension base="xs:positiveInteger">
+                <xs:attribute type="xs:boolean" name="opening" default="true"/>
+                <xs:attribute name="unit" default="day">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:token">
+                            <xs:enumeration value="day"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:attribute>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="descriptionType">
+        <xs:all>
+            <xs:element type="xs:string" name="full"/>
+            <xs:element type="xs:string" name="short"/>
+        </xs:all>
+    </xs:complexType>
+    <xs:complexType name="attributeType">
+        <xs:sequence>
+            <xs:element type="xs:token" name="name"/>
+            <xs:element type="xs:token" name="value"/>
+        </xs:sequence>
+        <xs:attribute name="type" default="attribute">
+            <xs:simpleType>
+                <xs:restriction base="xs:token">
+                    <xs:enumeration value="attribute"/>
+                    <xs:enumeration value="variation"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+    </xs:complexType>
+    <xs:complexType name="feedType">
+        <xs:sequence>
+            <xs:element type="productType" name="product"/>
+        </xs:sequence>
+        <xs:attribute type="xs:token" name="version" fixed="1.0.0"/>
+    </xs:complexType>
+    <xs:complexType name="discountType">
+        <xs:simpleContent>
+            <xs:extension base="xs:integer">
+                <xs:attribute name="type" default="price">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:token">
+                            <xs:enumeration value="price"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:attribute>
+                <xs:attribute type="xs:dateTime" name="start"/>
+                <xs:attribute type="xs:dateTime" name="end"/>
+                <xs:attribute type="xs:boolean" name="sale" default="false"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="variationsType">
+        <xs:sequence>
+            <xs:element type="variationType" name="variation" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="variationType">
+        <xs:all>
+            <xs:element type="xs:token" name="reference"/>
+            <xs:element type="xs:token" name="gtin" minOccurs="0"/>
+            <xs:element type="xs:positiveInteger" name="quantity"/>
+            <xs:element type="xs:decimal" name="price"/>
+            <xs:element type="shippingsType" name="shippings" minOccurs="0"/>
+            <xs:element type="discountsType" name="discounts" minOccurs="0"/>
+            <xs:element type="shippingType" name="shipping" minOccurs="0"/>
+            <xs:element type="imagesType" name="images" minOccurs="0"/>
+            <xs:element type="attributesType" name="attributes" minOccurs="0"/>
+        </xs:all>
+    </xs:complexType>
+    <xs:complexType name="imagesType">
+        <xs:sequence>
+            <xs:element type="imageType" name="image" maxOccurs="unbounded" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="imageType">
+        <xs:simpleContent>
+            <xs:extension base="xs:token">
+                <xs:attribute name="type" default="additional">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="main"/>
+                            <xs:enumeration value="additional"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:attribute>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="productType">
+        <xs:all>
+            <xs:element type="xs:token" name="reference"/>
+            <xs:element type="xs:token" name="gtin" minOccurs="0"/>
+            <xs:element type="xs:token" name="name"/>
+            <xs:element type="xs:token" name="link" minOccurs="0"/>
+            <xs:element type="xs:positiveInteger" name="quantity"/>
+            <xs:element type="xs:decimal" name="price"/>
+            <xs:element type="brandType" name="brand"/>
+            <xs:element type="categoryType" name="category"/>
+            <xs:element type="shippingsType" name="shippings" minOccurs="0"/>
+            <xs:element type="discountsType" name="discounts" minOccurs="0"/>
+            <xs:element type="descriptionType" name="description" minOccurs="0"/>
+            <xs:element type="shippingType" name="shipping" minOccurs="0"/>
+            <xs:element type="imagesType" name="images" minOccurs="0"/>
+            <xs:element type="attributesType" name="attributes" minOccurs="0"/>
+            <xs:element type="variationsType" name="variations" minOccurs="0"/>
+        </xs:all>
+    </xs:complexType>
+    <xs:complexType name="metadataType">
+        <xs:sequence>
+            <xs:element type="xs:token" name="agent" minOccurs="0"/>
+            <xs:element type="xs:token" name="platform" minOccurs="0"/>
+            <xs:element type="xs:dateTime" name="startedAt" minOccurs="0"/>
+            <xs:element type="xs:dateTime" name="finishedAt" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>
