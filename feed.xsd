@@ -80,6 +80,7 @@
             <xs:element type="productType" name="product"/>
         </xs:sequence>
         <xs:attribute type="xs:token" name="version" fixed="1.0.0"/>
+        <xs:anyAttribute processContents="lax"/>
     </xs:complexType>
     <xs:complexType name="discountType">
         <xs:simpleContent>

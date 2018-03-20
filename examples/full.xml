@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <catalog>
-    <feed version="1.0.0">
+    <feed version="1.0.0" extraAttr="test">
         <product>
             <reference>AB123</reference>
             <gtin>123456789></gtin>
