@@ -1,0 +1,6 @@
+{
+  "name": "shoppingfeed/feed-xml",
+  "type": "library",
+  "description": "Xml specification and examples for feed submission",
+  "license": "Apache-2.0"
+}

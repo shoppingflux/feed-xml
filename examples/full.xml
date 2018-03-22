@@ -1,97 +1,183 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <catalog>
-    <feed version="1.0.0" extraAttr="test">
-        <product>
-            <reference>AB123</reference>
-            <gtin>123456789></gtin>
-            <name><![CDATA[ My best product ]]></name>
-            <link><![CDATA[http://ps-dev.shopping-feed.com/index.php?id_product=8&amp;controller=product]]></link>
-            <price>10</price>
-            <quantity>1</quantity>
-            <brand>
-                <name><![CDATA[ Fashion Manufacturer ]]></name>
-                <link><![CDATA[http://ps-dev.shopping-feed.com]]></link>
-            </brand>
-            <category>
-                <name><![CDATA[ Root > Home > Mugs ]]></name>
-                <link><![CDATA[http://ps-dev.shopping-feed.com]]></link>
-            </category>
-            <discounts>
-                <discount>10</discount>
-            </discounts>
-            <description>
-                <full><![CDATA[ &lt;p&gt;very good mug&lt;/p&gt; ]]></full>
-                <short><![CDATA[ &lt;p&gt;a mug&lt;/p&gt; ]]></short>
-            </description>
-            <shippings>
-                <shipping>
-                    <amount>5.90</amount>
-                    <label><![CDATA[ Retrait magasin]]></label>
-                    <delay unit="day" opening="true">2</delay>
-                </shipping>
-            </shippings>
-            <images>
-                <image type="main"><![CDATA[http://ps-dev.shopping-feed.com/img/p/2/6/26-large_default.jpg]]></image>
-                <image type="additional"><![CDATA[http://ps-dev.shopping-feed.com/img/p/2/6/26-large_default.jpg]]></image>
-                <image type="additional"><![CDATA[http://ps-dev.shopping-feed.com/img/p/2/6/26-large_default.jpg]]></image>
-            </images>
-            <attributes>
-                <attribute type="variation">
-                    <name>Color</name>
-                    <value>Red</value>
-                </attribute>
-                <attribute type="variation">
-                    <name>Size</name>
-                    <value>XML</value>
-                </attribute>
-                <attribute type="attribute">
-                    <name>Capacity</name>
-                    <value>10</value>
-                </attribute>
-                <attribute>
-                    <name>Material</name>
-                    <value>Iron</value>
-                </attribute>
-            </attributes>
-            <variations>
-                <variation>
-                    <reference>AB123</reference>
-                    <gtin>123456789></gtin>
-                    <quantity>1</quantity>
-                    <price>10</price>
-                    <discounts>
-                        <discount type="price" start="2018-05-30T09:00:00" end="2018-05-30T09:00:00" sale="1">10</discount>
-                    </discounts>
-                    <shippings>
-                        <shipping>
-                            <amount>5.90</amount>
-                            <label><![CDATA[ Retrait magasin ]]></label>
-                            <delay unit="day" opening="true">2</delay>
-                        </shipping>
-                    </shippings>
-                    <images>
-                        <image><![CDATA[http://ps-dev.shopping-feed.com/img/p/2/6/26-large_default.jpg]]></image>
-                        <image><![CDATA[http://ps-dev.shopping-feed.com/img/p/2/6/26-large_default.jpg]]></image>
-                        <image><![CDATA[http://ps-dev.shopping-feed.com/img/p/2/6/26-large_default.jpg]]></image>
-                    </images>
-                    <attributes>
-                        <attribute type="variation">
-                            <name>Color</name>
-                            <value>Red</value>
-                        </attribute>
-                        <attribute type="attribute">
-                            <name>Capacity</name>
-                            <value>10</value>
-                        </attribute>
-                    </attributes>
-                </variation>
-            </variations>
-        </product>
-    </feed>
-    <metadata>
-        <agent>shopping-feed-php-sdk:1.0.0</agent>
-        <platform>Magento:2.0.1</platform>
-        <startedAt>2018-05-30T09:00:00</startedAt>
-        <finishedAt>2018-05-30T09:20:00</finishedAt>
-    </metadata>
+  <products version="1.0.0" extraAttr="test">
+    <product>
+      <reference>AB123</reference>
+      <gtin>123456789></gtin>
+      <name><![CDATA[ My best product ]]></name>
+      <link><![CDATA[http://ps-dev.shopping-feed.com/index.php?id_product=8&amp;controller=product]]></link>
+      <price>10</price>
+      <quantity>1</quantity>
+      <brand>
+        <name><![CDATA[ Fashion Manufacturer ]]></name>
+        <link><![CDATA[http://ps-dev.shopping-feed.com]]></link>
+      </brand>
+      <category>
+        <name><![CDATA[ Root > Home > Mugs ]]></name>
+        <link><![CDATA[http://ps-dev.shopping-feed.com]]></link>
+      </category>
+      <discounts>
+        <discount>10</discount>
+      </discounts>
+      <description>
+        <full><![CDATA[ &lt;p&gt;very good mug&lt;/p&gt; ]]></full>
+        <short><![CDATA[ &lt;p&gt;a mug&lt;/p&gt; ]]></short>
+      </description>
+      <shippings>
+        <shipping>
+          <amount>5.90</amount>
+          <label><![CDATA[ Retrait magasin]]></label>
+          <delay unit="day" opening="true">2</delay>
+        </shipping>
+      </shippings>
+      <images>
+        <image type="main"><![CDATA[http://ps-dev.shopping-feed.com/img/p/2/6/26-large_default.jpg]]></image>
+        <image type="additional"><![CDATA[http://ps-dev.shopping-feed.com/img/p/2/6/26-large_default.jpg]]></image>
+        <image type="additional"><![CDATA[http://ps-dev.shopping-feed.com/img/p/2/6/26-large_default.jpg]]></image>
+      </images>
+      <attributes>
+        <attribute type="variation">
+          <name>Color</name>
+          <value>Red</value>
+        </attribute>
+        <attribute type="variation">
+          <name>Size</name>
+          <value>XML</value>
+        </attribute>
+        <attribute type="attribute">
+          <name>Capacity</name>
+          <value>10</value>
+        </attribute>
+        <attribute>
+          <name>Material</name>
+          <value>Iron</value>
+        </attribute>
+      </attributes>
+      <variations>
+        <variation>
+          <reference>AB123</reference>
+          <gtin>123456789></gtin>
+          <quantity>1</quantity>
+          <price>10</price>
+          <discounts>
+            <discount type="price" start="2018-05-30T09:00:00" end="2018-05-30T09:00:00" sale="true">10</discount>
+          </discounts>
+          <shippings>
+            <shipping>
+              <amount>5.90</amount>
+              <label><![CDATA[ Retrait magasin ]]></label>
+              <delay unit="day" opening="true">2</delay>
+            </shipping>
+          </shippings>
+          <images>
+            <image><![CDATA[http://ps-dev.shopping-feed.com/img/p/2/6/26-large_default.jpg]]></image>
+            <image><![CDATA[http://ps-dev.shopping-feed.com/img/p/2/6/26-large_default.jpg]]></image>
+            <image><![CDATA[http://ps-dev.shopping-feed.com/img/p/2/6/26-large_default.jpg]]></image>
+          </images>
+          <attributes>
+            <attribute type="variation">
+              <name>Color</name>
+              <value>Red</value>
+            </attribute>
+            <attribute type="attribute">
+              <name>Capacity</name>
+              <value>10</value>
+            </attribute>
+          </attributes>
+        </variation>
+      </variations>
+    </product>
+    <product>
+      <reference>AB123</reference>
+      <gtin>123456789></gtin>
+      <name><![CDATA[ My best product ]]></name>
+      <link><![CDATA[http://ps-dev.shopping-feed.com/index.php?id_product=8&amp;controller=product]]></link>
+      <price>10</price>
+      <quantity>1</quantity>
+      <brand>
+        <name><![CDATA[ Fashion Manufacturer ]]></name>
+        <link><![CDATA[http://ps-dev.shopping-feed.com]]></link>
+      </brand>
+      <category>
+        <name><![CDATA[ Root > Home > Mugs ]]></name>
+        <link><![CDATA[http://ps-dev.shopping-feed.com]]></link>
+      </category>
+      <discounts>
+        <discount>10</discount>
+      </discounts>
+      <description>
+        <full><![CDATA[ &lt;p&gt;very good mug&lt;/p&gt; ]]></full>
+        <short><![CDATA[ &lt;p&gt;a mug&lt;/p&gt; ]]></short>
+      </description>
+      <shippings>
+        <shipping>
+          <amount>5.90</amount>
+          <label><![CDATA[ Retrait magasin]]></label>
+          <delay unit="day" opening="true">2</delay>
+        </shipping>
+      </shippings>
+      <images>
+        <image type="main"><![CDATA[http://ps-dev.shopping-feed.com/img/p/2/6/26-large_default.jpg]]></image>
+        <image type="additional"><![CDATA[http://ps-dev.shopping-feed.com/img/p/2/6/26-large_default.jpg]]></image>
+        <image type="additional"><![CDATA[http://ps-dev.shopping-feed.com/img/p/2/6/26-large_default.jpg]]></image>
+      </images>
+      <attributes>
+        <attribute type="variation">
+          <name>Color</name>
+          <value>Red</value>
+        </attribute>
+        <attribute type="variation">
+          <name>Size</name>
+          <value>XML</value>
+        </attribute>
+        <attribute type="attribute">
+          <name>Capacity</name>
+          <value>10</value>
+        </attribute>
+        <attribute>
+          <name>Material</name>
+          <value>Iron</value>
+        </attribute>
+      </attributes>
+      <variations>
+        <variation>
+          <reference>AB123</reference>
+          <gtin>123456789></gtin>
+          <quantity>1</quantity>
+          <price>10</price>
+          <discounts>
+            <discount type="price" start="2018-05-30T09:00:00" end="2018-05-30T09:00:00" sale="true">10</discount>
+          </discounts>
+          <shippings>
+            <shipping>
+              <amount>5.90</amount>
+              <label><![CDATA[ Retrait magasin ]]></label>
+              <delay unit="day" opening="true">2</delay>
+            </shipping>
+          </shippings>
+          <images>
+            <image><![CDATA[http://ps-dev.shopping-feed.com/img/p/2/6/26-large_default.jpg]]></image>
+            <image><![CDATA[http://ps-dev.shopping-feed.com/img/p/2/6/26-large_default.jpg]]></image>
+            <image><![CDATA[http://ps-dev.shopping-feed.com/img/p/2/6/26-large_default.jpg]]></image>
+          </images>
+          <attributes>
+            <attribute type="variation">
+              <name>Color</name>
+              <value>Red</value>
+            </attribute>
+            <attribute type="attribute">
+              <name>Capacity</name>
+              <value>10</value>
+            </attribute>
+          </attributes>
+        </variation>
+      </variations>
+    </product>
+  </products>
+  <metadata>
+    <agent>shopping-feed-php-sdk:1.0.0</agent>
+    <platform>Magento:2.0.1</platform>
+    <startedAt>2018-05-30T09:00:00</startedAt>
+    <finishedAt>2018-05-30T09:20:00</finishedAt>
+  </metadata>
 </catalog>
