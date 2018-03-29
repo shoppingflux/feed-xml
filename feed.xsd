@@ -160,6 +160,7 @@
       <xs:element type="xs:token" name="platform" minOccurs="0"/>
       <xs:element type="xs:dateTime" name="startedAt" minOccurs="0"/>
       <xs:element type="xs:dateTime" name="finishedAt" minOccurs="0"/>
+      <xs:element type="xs:integer" name="invalid" minOccurs="0"/>
       <xs:element type="xs:integer" name="ignored" minOccurs="0"/>
       <xs:element type="xs:integer" name="written" minOccurs="0"/>
     </xs:all>

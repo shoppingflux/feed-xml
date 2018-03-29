@@ -179,5 +179,8 @@
     <platform>Magento:2.0.1</platform>
     <startedAt>2018-05-30T09:00:00</startedAt>
     <finishedAt>2018-05-30T09:20:00</finishedAt>
+    <invalid>1</invalid>
+    <ignored>0</ignored>
+    <written>10</written>
   </metadata>
 </catalog>
