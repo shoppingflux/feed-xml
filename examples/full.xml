@@ -167,6 +167,36 @@
             </attribute>
           </attributes>
         </variation>
+        <variation>
+          <reference>AB123</reference>
+          <gtin>123456789></gtin>
+          <quantity>1</quantity>
+          <price>10</price>
+          <discounts>
+            <discount>10</discount>
+          </discounts>
+          <shippings>
+            <shipping>
+              <amount>5.90</amount>
+              <label><![CDATA[ Retrait magasin ]]></label>
+            </shipping>
+          </shippings>
+          <images>
+            <image><![CDATA[http://ps-dev.shopping-feed.com/img/p/2/6/26-large_default.jpg]]></image>
+            <image><![CDATA[http://ps-dev.shopping-feed.com/img/p/2/6/26-large_default.jpg]]></image>
+            <image><![CDATA[http://ps-dev.shopping-feed.com/img/p/2/6/26-large_default.jpg]]></image>
+          </images>
+          <attributes>
+            <attribute type="variation">
+              <name>Color</name>
+              <value>Red</value>
+            </attribute>
+            <attribute type="attribute">
+              <name>Capacity</name>
+              <value>10</value>
+            </attribute>
+          </attributes>
+        </variation>
       </variations>
     </product>
   </products>

@@ -82,7 +82,7 @@
   </xs:complexType>
   <xs:complexType name="variationsType">
     <xs:sequence>
-      <xs:element type="variationType" name="variation" minOccurs="0"/>
+      <xs:element type="variationType" name="variation" minOccurs="0" maxOccurs="unbounded"/>
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="variationType">
