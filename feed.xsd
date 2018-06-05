@@ -10,7 +10,6 @@
   <xs:complexType name="shippingType">
     <xs:all>
       <xs:element type="xs:decimal" name="amount"/>
-      <xs:element type="delayType" name="delay"/>
       <xs:element type="xs:normalizedString" name="label" minOccurs="0"/>
     </xs:all>
   </xs:complexType>
@@ -40,20 +39,6 @@
     <xs:sequence>
       <xs:element type="attributeType" name="attribute" maxOccurs="unbounded" minOccurs="0"/>
     </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="delayType">
-    <xs:simpleContent>
-      <xs:extension base="xs:positiveInteger">
-        <xs:attribute type="xs:boolean" name="opening" default="true"/>
-        <xs:attribute name="unit" default="day">
-          <xs:simpleType>
-            <xs:restriction base="xs:token">
-              <xs:enumeration value="day"/>
-            </xs:restriction>
-          </xs:simpleType>
-        </xs:attribute>
-      </xs:extension>
-    </xs:simpleContent>
   </xs:complexType>
   <xs:complexType name="descriptionType">
     <xs:all>
@@ -92,9 +77,6 @@
             </xs:restriction>
           </xs:simpleType>
         </xs:attribute>
-        <xs:attribute type="xs:dateTime" name="start"/>
-        <xs:attribute type="xs:dateTime" name="end"/>
-        <xs:attribute type="xs:boolean" name="sale" default="false"/>
       </xs:extension>
     </xs:simpleContent>
   </xs:complexType>

@@ -27,7 +27,6 @@
         <shipping>
           <amount>5.90</amount>
           <label><![CDATA[ Retrait magasin]]></label>
-          <delay unit="day" opening="true">2</delay>
         </shipping>
       </shippings>
       <images>
@@ -60,13 +59,12 @@
           <quantity>1</quantity>
           <price>10</price>
           <discounts>
-            <discount type="price" start="2018-05-30T09:00:00" end="2018-05-30T09:00:00" sale="true">10</discount>
+            <discount type="price">10</discount>
           </discounts>
           <shippings>
             <shipping>
               <amount>5.90</amount>
               <label><![CDATA[ Retrait magasin ]]></label>
-              <delay unit="day" opening="true">2</delay>
             </shipping>
           </shippings>
           <images>
@@ -113,7 +111,6 @@
         <shipping>
           <amount>5.90</amount>
           <label><![CDATA[ Retrait magasin]]></label>
-          <delay unit="day" opening="true">2</delay>
         </shipping>
       </shippings>
       <images>
@@ -146,13 +143,12 @@
           <quantity>1</quantity>
           <price>10</price>
           <discounts>
-            <discount type="price" start="2018-05-30T09:00:00" end="2018-05-30T09:00:00" sale="true">10</discount>
+            <discount>10</discount>
           </discounts>
           <shippings>
             <shipping>
               <amount>5.90</amount>
               <label><![CDATA[ Retrait magasin ]]></label>
-              <delay unit="day" opening="true">2</delay>
             </shipping>
           </shippings>
           <images>
