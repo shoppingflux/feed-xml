@@ -51,14 +51,6 @@
       <xs:element type="xs:token" name="name"/>
       <xs:element type="xs:token" name="value"/>
     </xs:sequence>
-    <xs:attribute name="type" default="attribute">
-      <xs:simpleType>
-        <xs:restriction base="xs:token">
-          <xs:enumeration value="attribute"/>
-          <xs:enumeration value="variation"/>
-        </xs:restriction>
-      </xs:simpleType>
-    </xs:attribute>
   </xs:complexType>
   <xs:complexType name="productsType">
     <xs:sequence>
@@ -82,7 +74,7 @@
   </xs:complexType>
   <xs:complexType name="variationsType">
     <xs:sequence>
-      <xs:element type="variationType" name="variation" minOccurs="0"/>
+      <xs:element type="variationType" name="variation" minOccurs="0" maxOccurs="unbounded"/>
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="variationType">
@@ -125,8 +117,8 @@
       <xs:element type="xs:token" name="link" minOccurs="0"/>
       <xs:element type="xs:integer" name="quantity"/>
       <xs:element type="xs:decimal" name="price"/>
-      <xs:element type="brandType" name="brand"/>
-      <xs:element type="categoryType" name="category"/>
+      <xs:element type="brandType" name="brand" minOccurs="0"/>
+      <xs:element type="categoryType" name="category" minOccurs="0"/>
       <xs:element type="shippingsType" name="shippings" minOccurs="0"/>
       <xs:element type="discountsType" name="discounts" minOccurs="0"/>
       <xs:element type="descriptionType" name="description" minOccurs="0"/>
