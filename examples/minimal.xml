@@ -6,12 +6,6 @@
       <name><![CDATA[ My best product ]]></name>
       <quantity>1</quantity>
       <price>1</price>
-      <brand>
-        <name><![CDATA[ Fashion Manufacturer ]]></name>
-      </brand>
-      <category>
-        <name><![CDATA[ Root > Home > Mugs ]]></name>
-      </category>
     </product>
   </products>
 </catalog>

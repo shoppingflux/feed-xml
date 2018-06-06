@@ -35,15 +35,15 @@
         <image type="additional"><![CDATA[http://ps-dev.shopping-feed.com/img/p/2/6/26-large_default.jpg]]></image>
       </images>
       <attributes>
-        <attribute type="variation">
+        <attribute>
           <name>Color</name>
           <value>Red</value>
         </attribute>
-        <attribute type="variation">
+        <attribute>
           <name>Size</name>
           <value>XML</value>
         </attribute>
-        <attribute type="attribute">
+        <attribute>
           <name>Capacity</name>
           <value>10</value>
         </attribute>
@@ -73,11 +73,11 @@
             <image><![CDATA[http://ps-dev.shopping-feed.com/img/p/2/6/26-large_default.jpg]]></image>
           </images>
           <attributes>
-            <attribute type="variation">
+            <attribute>
               <name>Color</name>
               <value>Red</value>
             </attribute>
-            <attribute type="attribute">
+            <attribute>
               <name>Capacity</name>
               <value>10</value>
             </attribute>
@@ -119,15 +119,15 @@
         <image type="additional"><![CDATA[http://ps-dev.shopping-feed.com/img/p/2/6/26-large_default.jpg]]></image>
       </images>
       <attributes>
-        <attribute type="variation">
+        <attribute>
           <name>Color</name>
           <value>Red</value>
         </attribute>
-        <attribute type="variation">
+        <attribute>
           <name>Size</name>
           <value>XML</value>
         </attribute>
-        <attribute type="attribute">
+        <attribute>
           <name>Capacity</name>
           <value>10</value>
         </attribute>
@@ -157,11 +157,11 @@
             <image><![CDATA[http://ps-dev.shopping-feed.com/img/p/2/6/26-large_default.jpg]]></image>
           </images>
           <attributes>
-            <attribute type="variation">
+            <attribute>
               <name>Color</name>
               <value>Red</value>
             </attribute>
-            <attribute type="attribute">
+            <attribute>
               <name>Capacity</name>
               <value>10</value>
             </attribute>
@@ -187,11 +187,11 @@
             <image><![CDATA[http://ps-dev.shopping-feed.com/img/p/2/6/26-large_default.jpg]]></image>
           </images>
           <attributes>
-            <attribute type="variation">
+            <attribute>
               <name>Color</name>
               <value>Red</value>
             </attribute>
-            <attribute type="attribute">
+            <attribute>
               <name>Capacity</name>
               <value>10</value>
             </attribute>
