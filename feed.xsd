@@ -117,6 +117,7 @@
       <xs:element type="xs:token" name="link" minOccurs="0"/>
       <xs:element type="xs:integer" name="quantity"/>
       <xs:element type="xs:decimal" name="price"/>
+      <!-- the tva value below represents a percentage value -->
       <xs:element type="xs:decimal" name="tva" minOccurs="0" />
       <xs:element type="xs:decimal" name="weight" minOccurs="0" />
       <xs:element type="xs:decimal" name="ecotax" minOccurs="0" />
