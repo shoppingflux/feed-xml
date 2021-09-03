@@ -15,7 +15,7 @@
       <!-- Mandatory : Quantity available for your product. -->
       <quantity>1</quantity>
       <!-- Optional : VAT applicable to your product (percent value) -->
-      <tva>19.0</tva>
+      <vat>19.0</vat>
       <!-- Optional : Ecotax applicable to your product -->
       <ecotax>0.56</ecotax>
       <!-- Optional : Weight of your product -->
