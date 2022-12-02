@@ -92,6 +92,8 @@
       <xs:element type="xs:token" name="gtin" minOccurs="0"/>
       <xs:element type="xs:integer" name="quantity"/>
       <xs:element type="xs:decimal" name="price"/>
+      <xs:element type="xs:decimal" name="weight" minOccurs="0" />
+      <xs:element type="xs:decimal" name="ecotax" minOccurs="0" />
       <xs:element type="shippingsType" name="shippings" minOccurs="0"/>
       <xs:element type="discountsType" name="discounts" minOccurs="0"/>
       <xs:element type="shippingType" name="shipping" minOccurs="0"/>

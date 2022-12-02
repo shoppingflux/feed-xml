@@ -70,6 +70,10 @@
           <gtin>123456789></gtin>
           <quantity>1</quantity>
           <price>10</price>
+          <!-- Optional : Ecotax applicable to your product; if none provided, the parent ecotax will be used -->
+          <ecotax>0.67</ecotax>
+          <!-- Optional : Weight of your product; if none provided, the parent weight will be used -->
+          <weight>3.5</weight>
           <discounts>
             <discount type="price">10</discount>
           </discounts>
