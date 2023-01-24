@@ -80,9 +80,9 @@
             </shipping>
           </shippings>
           <images>
-            <image><![CDATA[http://ps-dev.shopping-feed.com/img/p/2/6/26-large_default.jpg]]></image>
-            <image><![CDATA[http://ps-dev.shopping-feed.com/img/p/2/6/26-large_default.jpg]]></image>
-            <image><![CDATA[http://ps-dev.shopping-feed.com/img/p/2/6/26-large_default.jpg]]></image>
+            <image type="main"><![CDATA[http://ps-dev.shopping-feed.com/img/p/2/6/26-large_default.jpg]]></image>
+            <image type="additional"><![CDATA[http://ps-dev.shopping-feed.com/img/p/2/6/26-large_default.jpg]]></image>
+            <image type="additional"><![CDATA[http://ps-dev.shopping-feed.com/img/p/2/6/26-large_default.jpg]]></image>
           </images>
           <!-- Mandatory : Attribute set of your variation. Each variation must share the same attributes name (color, size...) with different values (Blue, Red, Small, Medium...)  -->
           <attributes>
@@ -112,9 +112,9 @@
             </shipping>
           </shippings>
           <images>
-            <image><![CDATA[http://ps-dev.shopping-feed.com/img/p/2/6/26-large_default.jpg]]></image>
-            <image><![CDATA[http://ps-dev.shopping-feed.com/img/p/2/6/26-large_default.jpg]]></image>
-            <image><![CDATA[http://ps-dev.shopping-feed.com/img/p/2/6/26-large_default.jpg]]></image>
+            <image type="main"><![CDATA[http://ps-dev.shopping-feed.com/img/p/2/6/26-large_default.jpg]]></image>
+            <image type="additional"><![CDATA[http://ps-dev.shopping-feed.com/img/p/2/6/26-large_default.jpg]]></image>
+            <image type="additional"><![CDATA[http://ps-dev.shopping-feed.com/img/p/2/6/26-large_default.jpg]]></image>
           </images>
           <attributes>
             <attribute>
@@ -197,9 +197,9 @@
             </shipping>
           </shippings>
           <images>
-            <image><![CDATA[http://ps-dev.shopping-feed.com/img/p/2/6/26-large_default.jpg]]></image>
-            <image><![CDATA[http://ps-dev.shopping-feed.com/img/p/2/6/26-large_default.jpg]]></image>
-            <image><![CDATA[http://ps-dev.shopping-feed.com/img/p/2/6/26-large_default.jpg]]></image>
+            <image type="main"><![CDATA[http://ps-dev.shopping-feed.com/img/p/2/6/26-large_default.jpg]]></image>
+            <image type="additional"><![CDATA[http://ps-dev.shopping-feed.com/img/p/2/6/26-large_default.jpg]]></image>
+            <image type="additional"><![CDATA[http://ps-dev.shopping-feed.com/img/p/2/6/26-large_default.jpg]]></image>
           </images>
           <attributes>
             <attribute>
@@ -227,9 +227,9 @@
             </shipping>
           </shippings>
           <images>
-            <image><![CDATA[http://ps-dev.shopping-feed.com/img/p/2/6/26-large_default.jpg]]></image>
-            <image><![CDATA[http://ps-dev.shopping-feed.com/img/p/2/6/26-large_default.jpg]]></image>
-            <image><![CDATA[http://ps-dev.shopping-feed.com/img/p/2/6/26-large_default.jpg]]></image>
+            <image type="main"><![CDATA[http://ps-dev.shopping-feed.com/img/p/2/6/26-large_default.jpg]]></image>
+            <image type="additional"><![CDATA[http://ps-dev.shopping-feed.com/img/p/2/6/26-large_default.jpg]]></image>
+            <image type="additional"><![CDATA[http://ps-dev.shopping-feed.com/img/p/2/6/26-large_default.jpg]]></image>
           </images>
           <attributes>
             <attribute>
