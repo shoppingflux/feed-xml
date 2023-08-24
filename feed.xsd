@@ -78,6 +78,8 @@
             </xs:restriction>
           </xs:simpleType>
         </xs:attribute>
+        <xs:attribute name="start-datetime" type="xs:dateTime"/>
+        <xs:attribute name="end-datetime" type="xs:dateTime"/>
       </xs:extension>
     </xs:simpleContent>
   </xs:complexType>

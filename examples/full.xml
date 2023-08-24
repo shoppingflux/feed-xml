@@ -71,7 +71,7 @@
           <quantity>1</quantity>
           <price>10</price>
           <discounts>
-            <discount type="price">10</discount>
+            <discount type="price" start-datetime="2023-07-01T08:00:00" end-datetime="2023-08-01T00:00:00">10</discount>
           </discounts>
           <shippings>
             <shipping>
